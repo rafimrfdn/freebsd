@@ -16,3 +16,13 @@ sudo pkg install xorg mpv pcmanfm rofi ranger libreoffice firefox inkscape gimp 
 
 ```
 sudo pkg install terminus-ttf jetbrains-mono
+```
+
+The very important aspect in this repo is how I find good configuration for Xorg. 
+
+First I create xorg configuration 
+
+1. remove the `.X0-lock` file from `/tmp/` so that I can continue next step
+2. run `sudo Xorg -configure`
+3. copy `xorg.conf` file on this repo to the `/usr/local/etc/X11/`
+4. reboot
