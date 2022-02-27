@@ -1,0 +1,18 @@
+[devfsrules_common=7]
+add path 'ad[0-9]\*'	mode 0660 group operator
+add path 'ada[0-9]\*'	mode 0660 group operator
+add path 'da[0-9]\*'	mode 0660 group operator
+add path 'acd[0-9]\*'	mode 0660 group operator
+add path 'cd[0-9]\*'	mode 0660 group operator
+add path 'mmcsd[0-9]\*'	mode 0660 group operator
+add path 'pass[0-9]\*'	mode 0660 group operator
+add path 'xpt[0-9]\*'	mode 0660 group operator
+add path 'ugen[0-9]\*'	mode 0660 group operator
+add path 'usbctl'	mode 0660 group operator
+add path 'usb/\*'	mode 0660 group operator
+add path 'lpt[0-9]\*'	mode 0660 group operator
+add path 'ulpt[0-9]\*'	mode 0660 group operator
+add path 'unlpt[0-9]\*'	mode 0660 group operator
+add path 'fd[0-9]\*'	mode 0660 group operator
+add path 'uscan[0-9]\*'	mode 0660 group operator
+add path 'video[0-9]\*'	mode 0660 group operator
