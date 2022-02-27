@@ -102,3 +102,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export XDG_RUNTIME_DIR=~/.tmp/xdg
+alias vim="nvim" 
+# after create alias, run "source .zshrc"
