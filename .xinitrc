@@ -1,28 +1,25 @@
+case $( basename "$( tty )" ) in
+        ttyv0)
+# Start DWM on TTYV0 
 feh --bg-fill --randomize ~/Pictures/wp/* &
 picom &
-#/usr/local/libexec/polkit-gnome-authentication-agent-1 &
-#xset mouse 5 1 &
-#polybar -c ~/.config/polybar/config main &
-#polybar main &
-
+xset r rate 300 50 &
 while true;do
-#    xsetroot -name "vol $(pamixer --get-volume-human) $(uptime | awk '{print $2,$3}') $(date +"%d %b %Y at %H:%M %p")" 
-#    xsetroot -name " $(pamixer --get-volume-human) $(date  +"%A %b %d") $(uptime | awk '{print $2,$3,$4,$1}')" 
-#    xsetroot -name "$(date  +"%d %b %H:%M ")" 
-#    xsetroot -name "$(date "+DATE: %d-%m-%Y TIME: %H:%M")"
-    copyq &
-    slstatus &
-    dwm >/dev/null 2>&1
-#    sleep 2
-done 
-
-#exec dwm
-
-### FOR RUN BSPWM
-
-#sxhkd &
-#polybar main &
-#xsetroot -cursor_name left_ptr
-#
-#exec bspwm
-
+      copyq &
+      slstatus &
+      exec dbus-launch --exit-with-session dwm >/dev/null 2>&1
+done
+;;
+       ttyv1)
+# Start KDE Plasma on TTYV1
+exec ck-launch-session startplasma-x11
+;;
+       ttyv2)
+# Start Gnome on TTYV2
+exec gnome-session
+;;
+       ttyv3)
+# Start XFCE on TTYV3
+. /usr/local/etc/xdg/xfce4/xinitrc
+;;
+        esac
