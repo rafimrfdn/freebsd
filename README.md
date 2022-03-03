@@ -9,7 +9,7 @@ On this FreeBSD setup I run [DWM](https://github.com/rafimrfdn/dwm-freebsd) and 
 ## Some apps installed
 
 ```
-pkg install doas xorg mpv pcmanfm rofi ranger libreoffice firefox-esr inkscape gimp lxappearance keepassxc kitty shotwell copyq neovim picom 
+pkg install doas xorg zsh zsh-autosuggestions mpv pcmanfm rofi ranger libreoffice firefox-esr inkscape gimp lxappearance keepassxc kitty shotwell copyq neovim picom 
 ```
 
 ## Set some alias
