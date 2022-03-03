@@ -3,15 +3,15 @@
 case $( basename "$( tty )" ) in 
         ttyv0) 
 # Start DWM on TTYV0 
-feh --bg-fill --randomize ~/Pictures/wp/* &        
+feh --bg-fill --randomize ~/Pictures/wp/* &    
 picom &    
 xset r rate 300 50 &    
 while true;do    
       copyq &    
       slstatus &    
-      exec dbus-launch --exit-with-session &    
-      dwm > /dev/null 2>&1    
-done     
+      dbus-launch --exit-with-session dwm > /dev/null 2>&1
+done    
+exec dwm   
 ;; 
        ttyv1) 
 # Start KDE Plasma on TTYV1
