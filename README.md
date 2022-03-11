@@ -19,7 +19,7 @@ I set alias in `.zshrc` file for example, I set alias to run NVIM with VIM comma
 alias vim="nvim"
 ```
 
-After that run `source .zshrc` to make the alias work
+After that run `source .zshrc` to make the alias work without logout, but if not just relogin the system.
 
 ## Some fonts installed
 
