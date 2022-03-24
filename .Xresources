@@ -1,0 +1,19 @@
+! this is configuration of xterm terminal
+! make sure you install xrdb 
+! then create .Xresources
+! then run xrdb -merge .Xresources
+!
+! this is my xterm configuration
+
+!XTerm.VT100*dynamicColors: On
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+XTerm.vt100.faceName: Liberation Mono:size=10:antialias=true
+XTerm.vt100.font: 7x13
+! disable bold font faces, instead make text light blue.
+XTerm.vt100.colorBDMode: true
+XTerm.vt100.colorBD: rgb:82/a4/d3
+! disable underlined text, instead make it white.
+XTerm.vt100.colorULMode: true
+XTerm.vt100.colorUL: rgb:e4/e4/e4
+! similarly use colorIT for italics
