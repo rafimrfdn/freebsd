@@ -3,15 +3,19 @@
 case $( basename "$( tty )" ) in 
         ttyv0) 
 # Start DWM on TTYV0 
-feh --bg-fill --randomize ~/Pictures/wp/* &    
-picom &    
-xset r rate 300 50 &    
-while true;do    
-      copyq &    
-      slstatus &    
-      dbus-launch --exit-with-session dwm > /dev/null 2>&1
-done    
-exec dwm   
+picom &
+xset r rate 300 50 &
+xset mouse 5 1 &
+feh --bg-fill --randomize ~/Pictures/wp/* &
+conky -b &
+~/.scripts/reducetty.sh &       # to reduce ttyv run background 
+xrdb -merge .Xresources &       # this is to run .Xresources as Xterm config
+while true;do
+	copyq &
+	slstatus &
+	dbus-launch --exit-with-session dwm > /dev/null 2>&1
+done
+exec dwm
 ;; 
        ttyv1) 
 # Start KDE Plasma on TTYV1
