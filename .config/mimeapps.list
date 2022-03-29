@@ -10,6 +10,8 @@ application/xhtml+xml=userapp-Firefox-KAT7I1.desktop
 application/x-extension-xhtml=userapp-Firefox-KAT7I1.desktop
 application/x-extension-xht=userapp-Firefox-KAT7I1.desktop
 text/plain=nvim.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-R3G2J1.desktop
+inode/directory=pcmanfm.desktop;
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-KAT7I1.desktop;
@@ -23,3 +25,8 @@ application/xhtml+xml=userapp-Firefox-KAT7I1.desktop;
 application/x-extension-xhtml=userapp-Firefox-KAT7I1.desktop;
 application/x-extension-xht=userapp-Firefox-KAT7I1.desktop;
 text/plain=nvim.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-R3G2J1.desktop;
+inode/directory=pcmanfm.desktop;
+
+[Removed Associations]
+inode/directory=code-oss.desktop
