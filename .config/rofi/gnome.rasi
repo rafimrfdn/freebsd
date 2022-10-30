@@ -108,6 +108,7 @@ element-icon {
 
 element-text {
     background-color: 				      @background-alt;
+    text-color: foreground;
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
