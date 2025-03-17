@@ -1,32 +1,24 @@
 [Default Applications]
-x-scheme-handler/http=userapp-Firefox-KAT7I1.desktop
-x-scheme-handler/https=userapp-Firefox-KAT7I1.desktop
-x-scheme-handler/chrome=userapp-Firefox-KAT7I1.desktop
-text/html=userapp-Firefox-KAT7I1.desktop
-application/x-extension-htm=userapp-Firefox-KAT7I1.desktop
-application/x-extension-html=userapp-Firefox-KAT7I1.desktop
-application/x-extension-shtml=userapp-Firefox-KAT7I1.desktop
-application/xhtml+xml=userapp-Firefox-KAT7I1.desktop
-application/x-extension-xhtml=userapp-Firefox-KAT7I1.desktop
-application/x-extension-xht=userapp-Firefox-KAT7I1.desktop
-text/plain=nvim.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-R3G2J1.desktop
-inode/directory=pcmanfm.desktop;
+x-scheme-handler/http=chromium-browser.desktop
+x-scheme-handler/https=chromium-browser.desktop
+x-scheme-handler/chrome=chromium-browser.desktop
+text/html=chromium-browser.desktop
+application/x-extension-htm=chromium-browser.desktop
+application/x-extension-html=chromium-browser.desktop
+application/x-extension-shtml=chromium-browser.desktop
+application/xhtml+xml=chromium-browser.desktop
+application/x-extension-xhtml=chromium-browser.desktop
+application/x-extension-xht=chromium-browser.desktop
+inode/directory=pcmanfm.desktop
+video/webm=mpv.desktop
+x-scheme-handler/about=chromium-browser.desktop
+x-scheme-handler/unknown=chromium-browser.desktop
 
 [Added Associations]
-x-scheme-handler/http=userapp-Firefox-KAT7I1.desktop;
-x-scheme-handler/https=userapp-Firefox-KAT7I1.desktop;
-x-scheme-handler/chrome=userapp-Firefox-KAT7I1.desktop;
-text/html=userapp-Firefox-KAT7I1.desktop;
-application/x-extension-htm=userapp-Firefox-KAT7I1.desktop;
-application/x-extension-html=userapp-Firefox-KAT7I1.desktop;
-application/x-extension-shtml=userapp-Firefox-KAT7I1.desktop;
-application/xhtml+xml=userapp-Firefox-KAT7I1.desktop;
-application/x-extension-xhtml=userapp-Firefox-KAT7I1.desktop;
-application/x-extension-xht=userapp-Firefox-KAT7I1.desktop;
-text/plain=nvim.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-R3G2J1.desktop;
+x-scheme-handler/http=chromium-browser.desktop;firefox.desktop;
+x-scheme-handler/https=chromium-browser.desktop;firefox.desktop;
+text/html=chromium-browser.desktop;firefox.desktop;
+application/xhtml+xml=chromium-browser.desktop;firefox.desktop;
 inode/directory=pcmanfm.desktop;
-
-[Removed Associations]
-inode/directory=code-oss.desktop
+video/webm=mpv.desktop;
+x-scheme-handler/chrome=chromium-browser.desktop;
