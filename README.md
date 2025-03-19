@@ -1,5 +1,7 @@
 # Cara install freebsd 14 di thinkpad p50
 
+![freebsd swayfx](./freebsd-swayfx.png)
+
 Di sini saya ingin install triple boot nixos, arch, dan freebsd. 
 
 Untuk freebsd saya install paling terakhir.
@@ -207,6 +209,8 @@ pkg install noto-sans-ch noto-sans-jp noto-sans-kr firacode liberation-fonts-ttf
 - ifconfig >> show wifi device = wlan0
 - dhclient wlan0 >> select and run wlan0 to scan wifi
 - ee /etc/wpa_supplicant.conf >> to edit wifi network
+- sysctl -a | grep temperature >> to show cpu temperature
+- sysctl dev.acpi_ibm.0.fan >> to show fan status, 1 is automatic, 0 is manual.
 ```
 
 ### example wpa_supplicant.conf file
